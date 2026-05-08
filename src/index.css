@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --bg-p1: "7F2020";
+  --bg-p2: "7F2020";
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#17313E] font-poppins;
+  }
+}
+
+@layer utilities {
+  /* Start of Typography */
+  .h2 {
+    @apply text-[32px] font-medium leading-[42px] text-black mb-4;
+  }
+  /* Start of Common */
+  .container {
+    @apply mx-auto;
+  }
+  .action-button {
+    @apply py-2 px-[22px] rounded-[6px] text-white text-[16px] leading-[26px] font-normal;
+  }
+  .input-row {
+    @apply flex flex-col gap-2;
+  }
+  .input-field {
+    @apply text-[18px] font-normal leading-[26px] py-2 pl-2 pr-[22px] border border-gray-300 outline-none rounded-[6px] w-full;
+  }
+}
+
+td,
+th {
+  @apply border border-[#F3E2D4] p-2;
+}
